@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pokedex Next Generation: sitio web responsivo con HTML5, CSS3, JavaScript y PokéAPI." />
+  <title>Pokedex Next Generation</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <header class="encabezado">
+    <nav class="nav-principal" aria-label="Navegación principal">
+      <a href="#inicio" class="logo" aria-label="Ir al inicio">Pokedex NG</a>
+
+      <ul class="menu">
+        <li><a href="#galeria">Galería</a></li>
+      </ul>
+
+      <button type="button" id="btn-tema" class="boton-tema" aria-label="Cambiar modo claro u oscuro">
+        🌙
+      </button>
+    </nav>
+
+    <section id="inicio" class="hero">
+      <div class="hero__contenido">
+        <h1>Pokedex Next Generation</h1>
+
+        <form class="buscador" id="formulario-busqueda">
+          <label for="buscar-pokemon">Buscar Pokémon por nombre</label>
+          <div class="buscador__fila">
+            <input
+              type="search"
+              id="buscar-pokemon"
+              name="buscar-pokemon"
+              placeholder="Ejemplo: pikachu, charizard, eevee"
+              autocomplete="off"
+            />
+            <button type="submit">Buscar</button>
+          </div>
+        </form>
+
+        <div class="panel-controles" aria-label="Controles de la galería">
+          <div class="campo-control">
+            <label for="selector-generacion">Generación</label>
+            <select id="selector-generacion" name="selector-generacion">
+              <option value="1">Generación I</option>
+              <option value="2">Generación II</option>
+              <option value="3">Generación III</option>
+              <option value="4">Generación IV</option>
+              <option value="5">Generación V</option>
+              <option value="6">Generación VI</option>
+              <option value="7">Generación VII</option>
+              <option value="8">Generación VIII</option>
+              <option value="9">Generación IX</option>
+            </select>
+          </div>
+
+          <button type="button" id="btn-cargar-datos" class="boton-secundario">
+            Cargar datos
+          </button>
+
+          <button type="button" id="btn-ver-todos" class="boton-secundario">
+            Ver todos
+          </button>
+
+          <button type="button" id="btn-ver-favoritos" class="boton-secundario">
+            ♥ Favoritos
+          </button>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="galeria" class="seccion-galeria" aria-labelledby="titulo-galeria">
+      <div class="galeria-encabezado">
+        <h2 id="titulo-galeria">Galería de Pokémon</h2>
+        <p id="contador-resultados" class="contador" aria-live="polite">0 resultados</p>
+      </div>
+
+      <p id="mensaje-estado" class="mensaje" role="status" aria-live="polite"></p>
+
+      <div id="contenedor-pokemon" class="grid-pokemon" aria-label="Listado de Pokémon"></div>
+
+      <div class="contenedor-cargar">
+        <button type="button" id="btn-cargar-mas" class="boton-principal">
+          Cargar más
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>
+      Proyecto Front End Galería
+      <a href="https://pokeapi.co/" target="_blank" rel="noopener noreferrer">PokéAPI</a>.
+    </p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

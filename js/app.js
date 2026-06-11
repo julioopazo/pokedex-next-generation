@@ -226,6 +226,7 @@ function renderizarPokemones(listaPokemones) {
 function crearTarjetaPokemon(pokemon) {
   const articulo = document.createElement("article");
   articulo.classList.add("tarjeta-pokemon");
+  articulo.setAttribute("role", "listitem");
 
   const id = pokemon.id;
   const nombre = pokemon.name;

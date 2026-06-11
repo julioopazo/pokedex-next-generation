@@ -6,6 +6,10 @@ Sitio web estático creado para el desafío de Programación Front End.
 
 Pokedex Next Generation consume datos desde PokéAPI y muestra una galería responsiva de Pokémon. Incluye búsqueda por nombre, carga por generación, botón para cargar más, modo claro/oscuro y sistema de favoritos usando localStorage.
 
+## Sitio publicado
+
+https://julioopazo.github.io/pokedex-next-generation/
+
 ## Tecnologías usadas
 
 - HTML5 semántico

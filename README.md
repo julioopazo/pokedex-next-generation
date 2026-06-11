@@ -32,6 +32,7 @@ https://julioopazo.github.io/pokedex-next-generation/
 - Favoritos con localStorage.
 - Colores por tipo Pokémon.
 - Favicon personalizado.
+- HTML validado correctamente en W3C.
 - Manejo de errores con try/catch.
 
 ## Estructura

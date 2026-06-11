@@ -40,7 +40,8 @@ pokedex-next-generation/
 ├── js/
 │   └── app.js
 ├── img/
-│   └── fondo-pokemon.png
+│   ├── fondo-pokemon.png
+│   └── favicon.svg
 ├── README.md
 └── .gitignore
 ```
